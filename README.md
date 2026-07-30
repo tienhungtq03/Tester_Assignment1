@@ -1,30 +1,24 @@
-# Tester Assignment 01
+# Assignment 02 - Project Management
 
 ## Student Information
 
-- Student: Nguyễn Tiến Hưng
-- Course: Tester
-- Assignment: Assignment 01
+- Name: Nguyễn Tiến Hưng
+- Subject: Programming Application in Business
+- Assignment: Project Management
 
 ## Contents
 
-This repository contains:
+This assignment includes:
 
-- Report 1: Learn about the role of a Software Tester.
-- Report 2: Website testing practice on medaivn.com.
-- Evidence images of the practical work.
+- BaoCao.docx
+- Images
+- Project Management Research
+- Website Testing (medai-project-board.vercel.app)
 
 ## Folder Structure
 
-```
-BaiTap01
+Assignment_02/
 │
-├── BaoCao1.docx
-├── BaoCao2.docx
+├── BaoCao.docx
 ├── README.md
-└── Images
-```
-
-## Author
-
-Nguyễn Tiến Hưng
+└── Images/
