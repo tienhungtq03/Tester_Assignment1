@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chia Nhóm Sinh Viên</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎯 AI Chia Nhóm Sinh Viên</h1>
+
+      <label>Danh sách sinh viên (mỗi dòng một tên)</label>
+
+      <textarea
+        id="students"
+        rows="12"
+        placeholder="Nguyễn Văn A
+Trần Thị B
+Lê Văn C"
+      ></textarea>
+
+      <label>Số nhóm</label>
+
+      <input type="number" id="groupCount" value="3" min="2" />
+
+      <div class="buttons">
+        <button onclick="generateGroups()">Chia nhóm</button>
+        <button onclick="resetForm()">Làm mới</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
