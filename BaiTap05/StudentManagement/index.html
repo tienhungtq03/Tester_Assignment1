@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Quản lý Sinh viên</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>🎓 Website Quản lý Sinh viên</h1>
+      <p>Student Management System</p>
+    </header>
+
+    <div class="container">
+      <!-- Search -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder="🔍 Nhập mã SV, họ tên hoặc lớp..."
+        />
+      </div>
+
+      <!-- Student Form -->
+      <div class="card">
+        <h2>Thông tin sinh viên</h2>
+
+        <form id="studentForm">
+          <div class="form-group">
+            <div>
+              <label>Mã sinh viên</label>
+              <input type="text" id="studentId" placeholder="SV001" required />
+            </div>
+
+            <div>
+              <label>Họ và tên</label>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Nguyễn Văn A"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div>
+              <label>Ngày sinh</label>
+              <input type="date" id="birthday" required />
+            </div>
+
+            <div>
+              <label>Giới tính</label>
+
+              <select id="gender">
+                <option value="Nam">Nam</option>
+
+                <option value="Nữ">Nữ</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div>
+              <label>Lớp</label>
+
+              <input type="text" id="className" placeholder="CNTT01" required />
+            </div>
+
+            <div>
+              <label>Email</label>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div>
+              <label>Số điện thoại</label>
+
+              <input type="text" id="phone" placeholder="0123456789" required />
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-add" id="saveBtn">
+              Thêm sinh viên
+            </button>
+
+            <button type="button" class="btn btn-reset" id="resetBtn">
+              Làm mới
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Student List -->
+
+      <div class="card">
+        <h2>Danh sách sinh viên</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Mã SV</th>
+
+              <th>Họ tên</th>
+
+              <th>Ngày sinh</th>
+
+              <th>Giới tính</th>
+
+              <th>Lớp</th>
+
+              <th>Email</th>
+
+              <th>SĐT</th>
+
+              <th>Chức năng</th>
+            </tr>
+          </thead>
+
+          <tbody id="studentTable">
+            <!-- Render bằng JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
